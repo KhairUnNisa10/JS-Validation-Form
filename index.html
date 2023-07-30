@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Login Form</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5087/5087579.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e4e7973e36.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h2>Login Form</h2>
+			<form action="#">
+				
+				<!-- Email Address Field -->
+				<div class="field email">
+					<div class="input-area">
+						<input type="text" placeholder="Email Address">
+						<i class="icon fa-solid fa-envelope"></i>
+						<i class="error error-icon fa-solid fa-circle-exclamation"></i>
+					</div>
+					<div class="error error-txt">
+						<p>Email Can't be Blank!</p>
+					</div>
+				</div>
+
+				<!-- Password Field -->
+				<div class="field password">
+					<div class="input-area">
+						<input type="password" placeholder="Password">
+						<i class="icon fa-solid fa-lock"></i>
+						<i class="error error-icon fa-solid fa-circle-exclamation"></i>
+					</div>
+					<div class="error error-txt">
+						<p>Password Can't be Blank!</p>
+					</div>
+				</div>
+
+				<!-- Forgot Password -->
+				<div class="pass-link">
+					<a href="#">Forgot Password</a>
+				</div>
+				<input type="submit" value="Login">
+			</form>
+			<div class="signup-link">
+				<p>Not a member yet <a href="signup.html">Signup Now</a></p>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

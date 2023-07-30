@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="css/signup-style.css">
+    <link rel="stylesheet" href="css/pass-gen.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5087/5087579.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e4e7973e36.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/pass-gen.css" /> -->
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+  mixpanel.init("e33b946c522c1d31aa73b0f2f1512860");</script>
+<!-- end Mixpanel -->
+</head>
+<body>
+    <div class="containers">
+        <header>SignUp Form</header> 
+        <div class="progress-bars">
+            <div class="steps"> 
+                <p>name</p>
+                <div class="bullets"><span>1</span></div>
+                <div class="check fa fa-check"></div>
+            </div>
+            <div class="steps"> 
+                <p>contact</p>
+                <div class="bullets"><span>2</span></div>
+                <div class="check fa fa-check"></div>
+            </div>
+            <div class="steps"> 
+                <p>birth</p>
+                <div class="bullets"><span>3</span></div>
+                <div class="check fa fa-check"></div>
+            </div>
+            <div class="steps"> 
+                <p>submit</p>
+                <div class="bullets"><span>4</span></div>
+                <div class="check fa fa-check"></div>
+            </div>
+        </div>
+        <div class="form-outer">
+            <form action="#">
+               <div class="page slide-page">
+                  <div class="title">
+                     Basic Information:
+                 </div>
+                 <div class="field fname password">
+                    <input type="text" placeholder="First Name">
+                    <i class="icon fa-solid fa-signature"></i>
+                    <!-- <i class="error error-icon fa-solid fa-circle-exclamation"></i> -->
+                    <div class="error error-txt">
+                        <!-- <p>Email Can't be Blank!</p> -->
+                    </div>
+                </div>
+
+                <div class="field lname password">
+
+                    <input type="text" placeholder="Last Name">
+                    <i class="icon fa-solid fa-signature"></i>
+                    <i class="error error-icon fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="field">
+                    <!-- <input type="submit" value="Next" class="firstNext next button"> -->
+                    <button class="firstNext next">Next</button>
+             </div>
+         </div>
+
+<div class="page">
+    <div class="title">Contact Information:</div>
+    <div class="field email">
+        <input type="text" placeholder="Email Address">
+        <i class="icon fa-solid fa-envelope"></i>
+    </div>
+    <div class="field password">
+        <input type="text" placeholder="Phone Number">
+        <i class="icon fa-solid fa-mobile-screen-button"></i>
+    </div>
+    <div class="field btns">
+        <button class="prev prev-1">Previous</button>
+        <button class="next next-1">Next</button>
+    </div>
+</div>  
+<div class="page">
+    <div class="title">Date of Birth:</div>
+    <div class="field password">
+        <input type="text" placeholder="Date Of Birth">
+        <i class="icon fa-regular fa-calendar"></i>
+    </div>
+    <div class="field">
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </div>
+    <div class="field btns">
+        <button class="prev prev-2">Previous</button>
+        <button class="next next-2">Next</button>
+    </div>
+</div> 
+<div class="page">
+    <div class="title">Login Detail:</div>
+    <div class="field password">
+        <input type="text" placeholder="User Name">
+        <i class="icon fa-regular fa-user"></i>
+    </div>
+    <div class="field password" id="pass">
+        <input type="password" placeholder="Password">
+        <i class="icon fa-solid fa-lock"></i>
+    </div>
+    <button class="open-modal" id="trigger">Strong Password Generator</button>
+    <!-- ---------- -->
+    <div class="modal-wrapper">
+        <div class="modal-container">
+            <button class="exit">&times;</button>
+            <div class="inner">
+                <div class="inner-passwords">
+                  <ul id="passwords" class="list-unstyled"></ul>
+                  <small class="more"><a href="#"><span class="glyphicon glyphicon-refresh"></span> more</a></small>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- -------------------- -->
+  <div class="field btns">
+    <button class="prev prev-3">Previous</button>
+    <button class="submit">Next</button>
+</div>
+</div>
+
+</form>
+<div class="login-link">
+                <p>Already have an Account? <a href="index.html">Login Now</a></p>
+            </div>
+</div>    
+
+</div>
+<script src="js/signup-script.js"></script>
+<!-- <script src="js/validations.js"></script> -->
+<script src="js/modal.js"></script>
+<script src="js/pass-gen.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="js/pass-gen.js"></script>
+
+
+</body>
+</html>

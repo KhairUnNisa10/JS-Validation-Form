@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	/*background-color: grey;*/
+	background-image: linear-gradient(to top, rgba(120, 4, 69, 0.52), rgba(6, 94, 152, 0.73)), url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	/*background-blend-mode: multiply;*/
+	background-position: center center;
+}
+
+.wrapper{
+	background-color: #ffffff;
+	width: 500px;
+	border-radius: 5px;
+	padding: 40px 30px 50px 30px;
+	text-align: center;
+	/*opacity: 0.9;*/
+}
+
+.wrapper h2{
+	font-size: 55px;
+	font-weight: 600;
+	/*color: #284819;*/
+	font-family: 'Dancing Script', cursive;
+	background: -webkit-linear-gradient(#065E98, #780445);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.wrapper form{
+	margin: 40px 0;
+}
+
+.wrapper form .field{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.wrapper form .field.shake{
+	animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake{
+	0%, 100%{
+		margin-left: 0;
+	}
+	20%, 80%{
+		margin-left: -12px;
+	}
+	40%, 60%{
+		margin-left: 12px;
+	}
+}
+
+.wrapper form .field .input-area{
+	position: relative;
+}
+
+.wrapper form input{
+	height: 50px;
+	width: 100%;
+	outline: none;
+	padding: 0 45px;
+	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid #bfbfbf;
+	border-bottom-width: 2px;
+}
+
+form .field input:focus, form .field.valid input{
+	border-color: #065E98;
+}
+form .field.shake input, form .field.error input{
+	border-color: #065E98;
+}
+
+.wrapper form .field.error input{
+	border-color: #dc3545;
+}
+
+.wrapper form input::placeholder{
+	color: #bfbfbf;
+	font-size: 17px;
+}
+
+.wrapper form .field i{
+	position: absolute;
+	top: 50%;
+	font-size: 18px;
+	pointer-events: none;
+	transform: translateY(-50%);
+}
+
+.wrapper form .field .icon {
+	left: 15px;
+	color: #bfbfbf;
+}
+
+.wrapper form .field .error-icon {
+	right: 15px;
+	color: #dc3545;
+}
+
+.wrapper form input:focus ~ .icon, form .field.valid .icon{
+	color: #065E98;
+}
+.wrapper form .field.shake input:focus ~ .icon, form .field.error input:focus ~ .icon{
+	color: #bfbfbf;
+}
+
+.wrapper form .field .error-txt{
+	color: #dc3545;
+	margin-top: 5px;
+	text-align: left;
+	font-size: 12px;
+}
+
+.wrapper form .field .error{
+	display: none;
+}
+
+.wrapper form .field.error .error{
+	display: block;
+}
+
+.wrapper form .pass-link{
+	text-align: left;	
+	margin-top: -10px;
+}
+
+.wrapper a{
+	color: #065E98;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.wrapper a:hover{
+	text-decoration: underline;
+	color: #780445;
+}
+
+.wrapper form input[type="submit"]{
+	margin-top: 30px;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	/*background-color: #284819;*/
+	background-image: linear-gradient(to left, #065E98, #780445);
+	transition: background 0.2s ease;
+}
+
+.wrapper form input[type="submit"]:hover{
+	background-image: linear-gradient(to left, #1780C5, #BD1472);
+}
+
+.wrapper .signup-link p{
+	color: #b7b6b6;
+}
